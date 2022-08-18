@@ -1,0 +1,111 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    background-color: green;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .flex-item-middle {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    background-color: yellow;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  /* @media (max-width: 800px) {
+    .details-container {
+      flex-direction: column;
+    }
+  } */
+
+  .flex-header {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+
+    width: auto;
+    height: 640px;
+
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/Video-BG-w-Overlay.png"); */
+  }
+
+  .flex-header-content {
+    flex: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: yellow;
+}
+
+.flex-header-content h1 {
+    position: absolute;
+    width: auto;
+    height: 88px;
+    left: 120px;
+    top: 386px;
+    
+    /* margin-left: 7.5rem; */
+
+    /* color: var(--color-bg); */
+    font-family: var(--font-family); 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.flex-header-content p {
+    margin-top: 1rem;
+    /* margin-left: 7.5rem; */
+
+    position: absolute;
+    width: auto;
+    height: 58px;
+    left: 120px;
+    top: 490px;
+
+    /* color: var(--color-bg); */
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.flex-header-queryBox {
+    flex: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    /* margin: 6.2rem 7.5rem 6.2rem 11.2rem; */
+    position: absolute;
+    width: 400px;
+    height: 440px;
+    left: 920px;
+    top: 281px;
+
+    background: var(--color-umbcTheme);
+    border-radius: 4px;
+}
+
+
+
+@media (max-width: 800px) {
+    .flex-header {
+      flex-direction: column;
+    }
+  }

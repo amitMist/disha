@@ -1,0 +1,11 @@
+.footer-container {
+    display: flex;
+    flex-direction: row;
+
+    width: 1519px;
+    height: 405px;
+    /* background: red; */
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 2rem 6rem; */
+}
