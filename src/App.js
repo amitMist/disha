@@ -1,7 +1,7 @@
 import React from "react";
 
 import { DetailsRow, StudentVideoAndQuote, Footer, Header } from "./containers";
-import { HeaderAndNavbar, Utilitybar } from "./components";
+import { HeaderAndNavbar, UtilityAndSearchBar } from "./components";
 import styled from 'styled-components';
 
 import "./App.css";
@@ -11,6 +11,7 @@ const App = () => {
   return (
     <>
     <Global />
+    <UtilityAndSearchBar />
     <HeaderAndNavbar />
     <DetailsRow />
     <StudentVideoAndQuote />
