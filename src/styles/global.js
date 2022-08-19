@@ -34,7 +34,7 @@ export const Container = styled.div`
 
 export const Box = styled.div`
   display: flex;
-  width: ${px2vw(320, 320)};
+  width: ${props => props.width ? px2vw(props.width): px2vw(350)};
   min-height: ${px2vw(200, 320)};
   flex-direction: column;
   margin: ${px2vw(20)};
@@ -43,13 +43,13 @@ export const Box = styled.div`
   max-height: 380px;
 
   @media (min-width: 768px) {
-    width: ${px2vw(320, 768)};
+    width: ${props => props.width ? px2vw(props.width, 768): px2vw(350, 768)};
     min-height: ${px2vw(200, 768)};
     height: 100%;
   }
 
   @media (min-width: 1024px) {
-    width: ${px2vw(500)};
+    width: ${props => props.width ? px2vw(props.width): px2vw(350)};
     min-height: ${px2vw(300)};
     height: 100%;
   }
@@ -58,7 +58,7 @@ export const Box = styled.div`
 export const BoxBg = styled.div`
   padding-left: ${px2vw(25)};
   padding-right: ${px2vw(25)};
-  height: 321px;
+  min-height: 321px;
   background-color: #EAEAEA;
   margin-top: ${(props) => props.marginTop? props.marginTop: "0px" };
 `;
@@ -91,6 +91,7 @@ export const BoxText = styled.p`
   line-height: ${(props) => props.lineHeight? props.lineHeight: "15px" };
   margin-top: ${(props) => props.marginTop? props.marginTop: "0px" };
   margin-bottom: ${(props) => props.marginBottom? props.marginBottom: "0px" };
+  letter-spacing: ${(props) => props.letterSpacing? props.letterSpacing: "normal" };
 
 `;
 
