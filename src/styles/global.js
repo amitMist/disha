@@ -54,9 +54,11 @@ export const Box = styled.div`
     height: 100%;
   }
 `;
+
 export const BoxBg = styled.div`
   padding-left: ${px2vw(25)};
   padding-right: ${px2vw(25)};
+  height: 321px;
   background-color: #EAEAEA;
   margin-top: ${(props) => props.marginTop? props.marginTop: "0px" };
 `;
