@@ -16,7 +16,7 @@ const App = () => {
     <VideoBGAndForm />
     <DetailsRow />
     <StudentVideoAndQuote />
-    <Footer />
+    <Footer/>
     </>
 
     

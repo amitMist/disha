@@ -57,4 +57,4 @@ const  VideoBGAndForm = () => {
 }
 
 
-export default VideoBGAndForm
+export default VideoBGAndForm;
