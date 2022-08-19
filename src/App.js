@@ -11,9 +11,9 @@ import VideoRow from "./containers/VideoRow/VideoRow";
 const App = () => {
   return (
     <>
-    <Global/>
-    <DetailsRow/>
-    <VideoRow/>
+    <Global />
+    <DetailsRow />
+    {/* <VideoRow /> */}
     </>
 
     

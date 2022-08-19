@@ -93,4 +93,15 @@ export const BoxText = styled.p`
 `;
 
 export const CollapseButton = styled.button`
+  width: 18px;
+  height: 31px;
+  margin-left: 87px;
+
+  color: var(--color-umbcTheme);
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px; 
+  background: none;
+  border: none;
 `;

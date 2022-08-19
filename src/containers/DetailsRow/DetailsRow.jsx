@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import "./DetailsRow.css";
 
+import expandVector from "../../assets/expandVector.svg";
 import onlineProgram from "../../assets/onlineProgram.svg";
 import USNews from "../../assets/USNews.svg";
 import registrationDates from "../../assets/registrationDates.svg";
