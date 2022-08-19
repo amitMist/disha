@@ -29,16 +29,6 @@
     line-height: 44px;
 }
 
-.header-content p {
-    margin-top: 1rem;
-    color: var(--color-bg);
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-}
-
 .header-content_input button {
     margin-top: 2rem;
     /* margin-left: 7.5rem; */
@@ -139,10 +129,17 @@
     color: var(--color-umbcTheme);    
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .header {
         /* flex-direction: column; */
         height: 400px;
+    }
+    .header-queryBox {
+        margin-right: 10px;
+    }
+    .header-content {
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
 }
