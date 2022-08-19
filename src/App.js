@@ -1,6 +1,6 @@
 import React from "react";
 
-import { DetailsRow, StudentVideoAndQuote, Footer, Header } from "./containers";
+import { VideoBGAndForm, DetailsRow, StudentVideoAndQuote, Footer } from "./containers";
 import { HeaderAndNavbar, UtilityAndSearchBar } from "./components";
 import styled from 'styled-components';
 
@@ -13,8 +13,10 @@ const App = () => {
     <Global />
     <UtilityAndSearchBar />
     <HeaderAndNavbar />
+    <VideoBGAndForm />
     <DetailsRow />
     <StudentVideoAndQuote />
+    <Footer />
     </>
 
     
