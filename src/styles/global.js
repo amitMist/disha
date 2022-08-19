@@ -26,6 +26,8 @@ export const Container = styled.div`
   justify-content: center;
   margin: ${px2vw(32)};
   max-width: 100%;
+  height: ${props => props.height? props.height: "auto"};
+  align-items: ${props => props.alignItems? props.alignItems: "normal"};
 
   @media (min-width: 1024px) {
     flex-wrap: nowrap;
@@ -97,6 +99,8 @@ export const BoxText = styled.p`
   margin-left: ${(props) => props.marginLeft? props.marginLeft: "0px" };
   padding-top: ${(props) => props.paddingTop? props.paddingTop: "0px" };
   letter-spacing: ${(props) => props.letterSpacing? props.letterSpacing: "normal" };
+  text-align: ${(props) => (props.textAlign ? props.textAlign : "left")};
+  width: ${props => props.width ? props.width : "inherit"};
 
 `;
 

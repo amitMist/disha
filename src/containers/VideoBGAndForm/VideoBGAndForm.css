@@ -1,29 +1,26 @@
 .header{
     display: flex;
     flex-direction: row;
-
-    width: auto;
+    width: 100%;
     height: 640px;
-
+    margin: 1vw;
+    align-items: center;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/Video-BG-w-Overlay.png");
+    
 }
 
 .header-content {
     flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    height: max-content;
+    padding-left: 120px;
+    padding-right: 180px;
 }
 
 .header-content h1 {
-    position: absolute;
-    width: 620px;
-    height: 88px;
-    left: 120px;
-    top: 386px;
-    
-    /* margin-left: 7.5rem; */
-
     color: var(--color-bg);
     font-family: var(--font-family); 
     font-style: normal;
@@ -34,14 +31,6 @@
 
 .header-content p {
     margin-top: 1rem;
-    /* margin-left: 7.5rem; */
-
-    position: absolute;
-    width: 620px;
-    height: 58px;
-    left: 120px;
-    top: 490px;
-
     color: var(--color-bg);
     font-family: var(--font-family);
     font-style: normal;
@@ -53,16 +42,6 @@
 .header-content_input button {
     margin-top: 2rem;
     /* margin-left: 7.5rem; */
-
-    display: flex;
-    flex-direction: row;
-
-    position: absolute;
-    width: 160px;
-    height: 37px;
-    left: 120px;
-    top: 580px;
-
     background: var(--color-umbcTheme);
     border-radius: 4px;
 
@@ -82,62 +61,21 @@
 .header-queryBox {
     flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-
-    /* margin: 6.2rem 7.5rem 6.2rem 11.2rem; */
-    position: absolute;
     width: 400px;
-    height: 440px;
-    left: 920px;
-    top: 281px;
-
+    height: max-content;
+    margin-right: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background: var(--color-umbcTheme);
     border-radius: 4px;
 }
 
-.header-queryBox h1 {
-    position: absolute;
-    margin: 1.8rem 1.6rem 24.2rem 1.6rem;
-    width: 350px;
-    height: 24px;
-    /* left: 945px;
-    top: 310px; */
 
-    color: var(--color-utility);
-    font-family: var(--font-family); 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    text-transform: uppercase;
-}
-
-.header-queryBox p {
-    position: absolute;
-    margin-top: 24.9rem;
-    margin-left: 1.5rem;
-    width: 340px;
-    height: 11px;
-    /* left: 945px;
-    top: 680px; */
-
-    color: var(--color-utility);
-    font-family: var(--font-family);
-    font-style: italic;
-    font-weight: 500;
-    font-size: 9px;
-    line-height: 11px;
-    /* identical to box height */
-    
-    letter-spacing: -0.02em;
-    
-    color: #000000;
-}
 .header-queryBox_form p {
-    position: absolute;
-    margin-top: 3.9rem;
-    margin-left: 1.5rem;
+
     width: 350px;
     height: 17px;
     /* left: 945px;
@@ -151,26 +89,13 @@
     line-height: 17px;
 }
 
-/* .header-queryBox_radiobutton {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-} */
 
 .header-queryBox_radiobutton label {
-    position: absolute;
-    margin-top: 6rem;
-    margin-left: 3.8rem;
-    padding-left: 7px;
-    width: 104px;
-    height: 65px;
-    /* left: 982px;
-    top: 378px; */
 
+    padding-left: 7px;
     font-family: var(--font-family);
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 12px;
     line-height: 15px;
     white-space: nowrap;
@@ -181,189 +106,29 @@
 .header-queryBox_radiobutton input {
     box-sizing: border-box;
 
-    position: absolute;
-    margin-top: 6.1rem;
-    margin-left: 2.8rem;
     width: 10px;
     height: 10px;
-    /* left: 965px;
-    top: 380px; */
-
     background: #FFFFFF;
     border: 1px solid #000000;
 }
 
-.header-queryBox_namefield {
-    /*margin-top: 1rem; /*respect to querybox */
+.header-queryBox_field {
     flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
-
-.header-queryBox_namefield-fname label{
-    position: absolute;
-    margin-top: 6.1rem; /*respect to form <p> */
-    margin-left: 1.5rem;
-    width: 61px;
-    height: 15px;
-    /* left: 945px;
-    top: 459px; */
-    
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    /* identical to box height */
-    
-    letter-spacing: -0.01em;
-    
-    color: var(--color-utility);
-}
-
-.header-queryBox_namefield-fname input {
-    position: absolute;
-    margin-top: 7.4rem; /*respect to form <p> */
-    margin-left: 1.5rem;
-    width: 160px;
+.header-queryBox_field input{
+    width: 100%;
     height: 35px;
-    /* left: 945px;
-    top: 480px; */
-
-    background: var(--color-bg);
 }
 
-.header-queryBox_namefield-lname label {
-    position: absolute;
-    margin-top: 6.1rem; /*respect to form <p> */
-    margin-left: 13.4rem; /*respect to querybox */
-    width: 59px;
-    height: 15px;
-    /* left: 1135px;
-    top: 459px; */
-    
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    /* identical to box height */
-    
-    letter-spacing: -0.01em;
-    
-    color: var(--color-utility);
-}
-
-.header-queryBox_namefield-lname input {
-    position: absolute;
-    margin-top: 7.4rem; /*respect to form <p> */
-    margin-left: 13.4rem; /*respect to querybox */
-    width: 160px;
-    height: 35px;
-    /* left: 1135px;
-    top: 480px; */
-    
-    background: var(--color-bg);
-}
-
-.header-queryBox_emailfield {
-    /*margin-top: 1rem; /*respect to querybox */
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.header-queryBox_emailfield label {
-    position: absolute;
-    margin-top: 10.5rem; /*respect to form <p> */
-    margin-left: 1.5rem; /*respect to querybox */
-    width: 86px;
-    height: 15px;
-    /* left: 945px;
-    top: 529px; */
-    
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    /* identical to box height */
-    
-    letter-spacing: -0.01em;
-    
-    color: var(--color-utility);    
-}
-
-.header-queryBox_emailfield input {
-    position: absolute;
-    margin-top: 11.8rem; /*respect to form <p> */
-    margin-left: 1.5rem;
-    width: 350px;
-    height: 35px;
-    /* left: 945px;
-    top: 550px; */
-    
-    background: var(--color-bg);    
-}
-
-.header-queryBox_zipcodefield {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.header-queryBox_zipcodefield label {
-    position: absolute;
-    margin-top: 14.8rem; /*respect to form <p> */
-    margin-left: 1.5rem; /*respect to querybox */
-    width: 50px;
-    height: 15px;
-    /* left: 945px;
-    top: 599px; */
-    
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    /* identical to box height */
-    
-    letter-spacing: -0.01em;
-    
-    color: var(--color-utility);    
-}
-
-.header-queryBox_zipcodefield input {
-    position: absolute;
-    margin-top: 16rem; /*respect to form <p> */
-    margin-left: 1.5rem; /*respect to querybox */
-    width: 160px;
-    height: 35px;
-    /* left: 945px;
-    top: 620px; */
-    
-    background: var(--color-bg);    
-}
-
-.header-queryBox_zipcodefield-submit input {
-    display: flex;
-    flex-direction: row;
-
-    position: absolute;
-    margin-top: 16.1rem; /*respect to form <p> */
-    margin-left: 13.4rem; /*respect to querybox */
+.header-queryBox_submit input {
     width: 160px;
     height: 37px;
-    /* left: 1135px;
-    top: 618px; */
-    
     background: var(--color-utility);
     border-radius: 4px; 
-    
-    padding: 0.4rem 2.2rem 0.4rem 2.2rem;
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 700;
@@ -371,20 +136,13 @@
     line-height: 24px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    
     color: var(--color-umbcTheme);    
 }
 
 @media (max-width: 700px) {
     .header {
         /* flex-direction: column; */
-        display: block;
+        height: 400px;
     }
-    .header-content {
-        width: 100%;
-    }
-
-    .header-queryBox {
-        width: 100%;
-    }
+    
 }

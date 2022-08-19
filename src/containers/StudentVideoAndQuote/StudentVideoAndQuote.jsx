@@ -1,10 +1,6 @@
 import React from "react";
 
 import "./StudentVideoAndQuote.css";
-
-import onlineProgram from "../../assets/onlineProgram.svg";
-import USNews from "../../assets/USNews.svg";
-import registrationDates from "../../assets/registrationDates.svg";
 import quote from "../../assets/quote.svg";
 import { Box, BoxText, Container } from "../../styles/global";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
