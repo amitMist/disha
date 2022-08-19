@@ -57,7 +57,10 @@ const DetailsRow = () => {
     <Container>
       <Box>
         <CollapseSection key={"onlineProgram"} title={"Featured Program"}>
-          <BoxBg>
+          <BoxBg style={{
+                display: "flex",
+                flexDirection: "column"
+              }}>
             <BoxText
               fontWeight="700"
               fontSize="16px"
@@ -67,16 +70,18 @@ const DetailsRow = () => {
             >
               Online M.S. in Information Systems
             </BoxText>
+            <div style={{
+                alignSelf: "center"
+              }}>
             <img 
               src={onlineProgram}
               alt="onlineProgram"
               style={{
-                display: "block",
                 marginRight: "auto",
                 marginTop: "12px",
-                width: "100%"
               }}
             />
+            </div>
             <BoxText
               paddingTop="12px"
               marginBottom="8px"
