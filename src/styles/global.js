@@ -59,12 +59,17 @@ export const BoxBg = styled.div`
   min-height: 321px;
   background-color: #EAEAEA;
   margin-top: ${(props) => props.marginTop? props.marginTop: "0px" };
+  margin-left: ${(props) => props.marginLeft? props.marginLeft: "0px" };
+  margin-right: ${(props) => props.marginRight? props.marginRight: "0px" };
+  padding-top: ${(props) => props.paddingTop? props.paddingTop: "0px" };
 `;
 
 export default Global;
 
 export const BoxTitle = styled.p`
   color: #FFFFFF;
+  font-family: var(--font-family);
+  font-style: normal;
   font-size: 26px;
   text-align: ${(props) => (props.textAlign ? props.textAlign : "center")};
   font-weight: bold;
@@ -82,7 +87,7 @@ export const BoxTitle = styled.p`
 
 export const BoxText = styled.p`
   color: ${(props) => (props.color ? props.color : "#000000")};
-  font-size: ${(props) => props.fontSize};
+  font-family: var(--font-family);
   font-style:${(props) => props.fontStyle? props.fontStyle: "normal" };
   font-weight: ${(props) => props.fontWeight? props.fontWeight: "400" };
   font-size: ${(props) => props.fontSize? props.fontSize: "12px" };

@@ -65,13 +65,32 @@ const DetailsRow = () => {
             >
               Online M.S. in Information Systems
             </BoxText>
-            <img src={onlineProgram} alt="onlineProgram" />
-            <BoxText>
+            <img 
+              src={onlineProgram}
+              alt="onlineProgram"
+              style={{
+                display: "block",
+                marginRight: "auto",
+                marginTop: "12px",
+              }}
+            />
+            <BoxText
+              paddingTop="12px"
+              marginBottom="8px"
+            >
               Turn data into solutions, and get the skills and career you want.
               Join the only public university in Maryland with a nationally
               ranked graduate online technology program.
             </BoxText>
-            <BoxText>More on Information Systems Degrees →</BoxText>
+            <BoxText
+              paddingTop="8px"
+              marginBottom="19px"
+              fontWeight="700"
+              fontSize="14px"
+              lineHeight="17px"
+            >
+              More on Information Systems Degrees →
+            </BoxText>
           </BoxBg>
         </CollapseSection>
       </Box>
@@ -87,10 +106,13 @@ const DetailsRow = () => {
                 display: "block",
                 marginLeft: "auto",
                 marginRight: "auto",
-                paddingTop: "10px",
+                paddingTop: "35px",
               }}
             />
-            <BoxText>
+            <BoxText
+              marginTop="27px"
+              marginLeft="25px"
+            >
               UMBC is ranked #7 nationally as an innovative university and #13
               in undergraduate teaching.
             </BoxText>
@@ -99,7 +121,9 @@ const DetailsRow = () => {
       </Box>
       <Box>
         <CollapseSection key={"registrationDate"} title={"Registration Dates"}>
-          <BoxBg>
+          <BoxBg
+            paddingTop="33px"
+          >
             <img src={registrationDates} alt="registrationDates" />
           </BoxBg>
         </CollapseSection>
