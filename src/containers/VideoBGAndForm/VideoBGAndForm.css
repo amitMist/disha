@@ -83,6 +83,9 @@
     font-size: 14px;
 }
 
+.header-queryBox_radiobutton {
+    float: left;
+}
 
 .header-queryBox_radiobutton label {
 

@@ -65,7 +65,7 @@ const  VideoBGAndForm = () => {
         </BoxText>
         <form action="#" style={{ width: "100%" }}>
           <div className="header-queryBox_form">
-            <Container>
+            <Container style={{ flexDirection: "column" }}>
               <div className="header-queryBox_radiobutton">
                 <input
                   type="radio"
