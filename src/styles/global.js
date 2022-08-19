@@ -34,7 +34,7 @@ export const Container = styled.div`
 
 export const Box = styled.div`
   display: flex;
-  width: ${props => props.width ? px2vw(props.width): px2vw(350)};
+  width: ${props => props.width ? px2vw(props.width, 350): px2vw(350, 350)};
   min-height: ${px2vw(200, 320)};
   flex-direction: column;
   margin: ${px2vw(20)};
@@ -43,13 +43,13 @@ export const Box = styled.div`
   max-height: 380px;
 
   @media (min-width: 768px) {
-    width: ${props => props.width ? px2vw(props.width, 768): px2vw(350, 768)};
+    width: ${px2vw(350, 768)};
     min-height: ${px2vw(200, 768)};
     height: 100%;
   }
 
   @media (min-width: 1024px) {
-    width: ${props => props.width ? px2vw(props.width): px2vw(350)};
+    width: ${px2vw(500)};
     min-height: ${px2vw(300)};
     height: 100%;
   }
@@ -68,7 +68,7 @@ export default Global;
 export const BoxTitle = styled.p`
   color: #FFFFFF;
   font-size: 26px;
-  text-align: center;
+  text-align: ${(props) => (props.textAlign ? props.textAlign : "center")};
   font-weight: bold;
   background-color: #007176;
   padding-left: 60px;
@@ -76,7 +76,7 @@ export const BoxTitle = styled.p`
   padding-top: 15px;
   padding-bottom: 15px;
 
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     text-align: left;
   }
   
@@ -91,6 +91,7 @@ export const BoxText = styled.p`
   line-height: ${(props) => props.lineHeight? props.lineHeight: "15px" };
   margin-top: ${(props) => props.marginTop? props.marginTop: "0px" };
   margin-bottom: ${(props) => props.marginBottom? props.marginBottom: "0px" };
+  margin-left: ${(props) => props.marginLeft? props.marginLeft: "0px" };
   letter-spacing: ${(props) => props.letterSpacing? props.letterSpacing: "normal" };
 
 `;
@@ -98,8 +99,7 @@ export const BoxText = styled.p`
 export const CollapseButton = styled.button`
   width: 18px;
   height: 31px;
-  margin-left: 87px;
-
+  float: right;
   color: var(--color-umbcTheme);
   font-family: var(--font-family);
   font-weight: bold;
@@ -107,4 +107,5 @@ export const CollapseButton = styled.button`
   line-height: 31px; 
   background: none;
   border: none;
+  margin-right: 10px;
 `;

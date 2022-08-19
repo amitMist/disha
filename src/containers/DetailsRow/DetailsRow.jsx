@@ -25,7 +25,7 @@ function CollapseSection(props) {
   }, [setExpanded, isDesktop]);
   return (
     <div>
-      <BoxTitle>{props.title} {!isDesktop ? (
+      <BoxTitle textAlign={isDesktop? "center" : "left"} marginLeft={isDesktop? "0px":"10px"} >{props.title} {!isDesktop ? (
         <CollapseButton {...getToggleProps()}>{isExpanded ? "-" : "+"}</CollapseButton>
       ) : (
         <></>
@@ -59,10 +59,6 @@ const DetailsRow = () => {
             <BoxText>More on Information Systems Degrees →</BoxText>
           </BoxBg>
         </CollapseSection>
-
-        {/* <section {...getCollapseProps()}>
-          
-        </section> */}
       </Box>
       <Box>
         <CollapseSection key={"nationalRank"} title={"Nationally Ranked"}>
