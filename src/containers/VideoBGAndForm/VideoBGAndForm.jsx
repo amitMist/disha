@@ -26,7 +26,7 @@ const  VideoBGAndForm = () => {
           fontWeight="500"
           fontSize="24px"
           lineHeight="29px"
-          marginTop="1vw"
+          marginTop="2vw"
           color="#FFFFFF"
           
         >
