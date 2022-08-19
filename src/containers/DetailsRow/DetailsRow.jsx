@@ -17,6 +17,7 @@ import {
 } from "../../styles/global";
 import useCollapse from "react-collapsed";
 import useMediaQuery from "../../utils/useMediaQuery";
+import { isDesktop } from "react-device-detect";
 
 function CollapseSection(props) {
   const isDesktop = useMediaQuery("(min-width: 960px)");
@@ -51,6 +52,7 @@ function CollapseSection(props) {
 }
 
 const DetailsRow = () => {
+  const isDesktop = useMediaQuery("(min-width: 960px)");
   return (
     <Container>
       <Box>
@@ -72,11 +74,13 @@ const DetailsRow = () => {
                 display: "block",
                 marginRight: "auto",
                 marginTop: "12px",
+                width: "100%"
               }}
             />
             <BoxText
               paddingTop="12px"
               marginBottom="8px"
+              fontSize={isDesktop? "14px": "12px"}            
             >
               Turn data into solutions, and get the skills and career you want.
               Join the only public university in Maryland with a nationally
@@ -112,6 +116,7 @@ const DetailsRow = () => {
             <BoxText
               marginTop="27px"
               marginLeft="25px"
+              fontSize={isDesktop? "14px": "12px"}
             >
               UMBC is ranked #7 nationally as an innovative university and #13
               in undergraduate teaching.

@@ -79,6 +79,10 @@
     line-height: 17px;
 }
 
+.header-queryBox_field input {
+    font-size: 14px;
+}
+
 
 .header-queryBox_radiobutton label {
 
