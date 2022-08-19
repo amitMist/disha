@@ -7,7 +7,14 @@ import onlineProgram from "../../assets/onlineProgram.svg";
 import USNews from "../../assets/USNews.svg";
 import registrationDates from "../../assets/registrationDates.svg";
 import quote from "../../assets/quote.svg";
-import { Container, Box, BoxTitle, BoxText, BoxBg , CollapseButton} from "../../styles/global";
+import {
+  Container,
+  Box,
+  BoxTitle,
+  BoxText,
+  BoxBg,
+  CollapseButton,
+} from "../../styles/global";
 import useCollapse from "react-collapsed";
 import useMediaQuery from "../../utils/useMediaQuery";
 
@@ -25,11 +32,19 @@ function CollapseSection(props) {
   }, [setExpanded, isDesktop]);
   return (
     <div>
-      <BoxTitle textAlign={isDesktop? "center" : "left"} marginLeft={isDesktop? "0px":"10px"} >{props.title} {!isDesktop ? (
-        <CollapseButton {...getToggleProps()}>{isExpanded ? "-" : "+"}</CollapseButton>
-      ) : (
-        <></>
-      )}</BoxTitle>
+      <BoxTitle
+        textAlign={isDesktop ? "center" : "left"}
+        marginLeft={isDesktop ? "0px" : "10px"}
+      >
+        {props.title}{" "}
+        {!isDesktop ? (
+          <CollapseButton {...getToggleProps()}>
+            {isExpanded ? "-" : "+"}
+          </CollapseButton>
+        ) : (
+          <></>
+        )}
+      </BoxTitle>
       <section {...getCollapseProps()}>{props.children}</section>
     </div>
   );
@@ -40,12 +55,12 @@ const DetailsRow = () => {
     <Container>
       <Box>
         <CollapseSection key={"onlineProgram"} title={"Featured Program"}>
-          <BoxBg marginTop="-15px">
+          <BoxBg>
             <BoxText
               fontWeight="700"
               fontSize="16px"
               lineHeight="19px"
-              marginTop="15px"
+              paddingTop="15px"
               marginBottom="15px"
             >
               Online M.S. in Information Systems
@@ -62,10 +77,19 @@ const DetailsRow = () => {
       </Box>
       <Box>
         <CollapseSection key={"nationalRank"} title={"Nationally Ranked"}>
-          <BoxBg marginTop="-30px">
-            <Container>
-              <img src={USNews} width="210px" height="190px" alt="USNews" />
-            </Container>
+          <BoxBg>
+            <img
+              src={USNews}
+              width="210px"
+              height="190px"
+              alt="USNews"
+              style={{
+                display: "block",
+                marginLeft: "auto",
+                marginRight: "auto",
+                paddingTop: "10px",
+              }}
+            />
             <BoxText>
               UMBC is ranked #7 nationally as an innovative university and #13
               in undergraduate teaching.
