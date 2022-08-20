@@ -1,7 +1,7 @@
 /* useState hook is using for toggle menu */
 import React, {useState} from 'react';
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
-import umbcLogo from '../../assets/logo.png';
+import umbcLogo from '../../assets/logo.svg';
 import './HeaderAndNavbar.css';
 
 import facebookVector from '../../assets/facebookExpandVector.svg';
@@ -25,10 +25,10 @@ const Menu = () => (
 const getSocialMediaLinks=()=>{
   return (
     <div className="utilitybar-links_socialMedia">
-          <img src={ facebookVector } alt="vector" />
-          <img src={ twitterVector } alt="vector" />
-          <img src={ instagramVector } alt="vector" />
-          <img src={ youtubeVector } alt="vector" />
+          <img src={ facebookVector } alt="facebook icon" />
+          <img src={ twitterVector } alt="twitter icon" />
+          <img src={ instagramVector } alt="instagram icon" />
+          <img src={ youtubeVector } alt="youtube icon" />
       </div>
   )
 }
@@ -41,7 +41,7 @@ const HeaderAndNavbar = () => {
     <div className="navbar">
       <div className="navbar-links">
         <div className="navbar-links_logo">
-          <img src={ umbcLogo } alt="logo" />
+          <img src={ umbcLogo } alt="umbc logo" />
         </div>
         <div className="navbar-links_container">
           <Menu />

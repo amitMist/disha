@@ -75,7 +75,7 @@ const DetailsRow = () => {
               }}>
             <img 
               src={onlineProgram}
-              alt="onlineProgram"
+              alt="online program information"
               style={{
                 marginRight: "auto",
                 marginTop: "12px",
@@ -110,7 +110,7 @@ const DetailsRow = () => {
               src={USNews}
               width="210px"
               height="190px"
-              alt="USNews"
+              alt="nationally ranked"
               style={{
                 display: "block",
                 marginLeft: "auto",
@@ -134,7 +134,7 @@ const DetailsRow = () => {
           <BoxBg
             paddingTop="33px"
           >
-            <img src={registrationDates} alt="registrationDates" />
+            <img src={registrationDates} alt="registration dates" />
           </BoxBg>
         </CollapseSection>
       </Box>

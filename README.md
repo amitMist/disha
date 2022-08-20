@@ -1,3 +1,14 @@
+# Instruction to Run the Solution to the Exercise
+
+This project has been developed in React JavaScript library. It requires Node JS to be installed on the local computer.
+
+### Step 1: Install Node JS from [Node JS](https://nodejs.org/en/download/)
+### Step 2: Use the following command to install dependencies: `npm install --legacy-peer-deps`
+### Step 3: Use the following command to run the application: `npm start` 
+
+It should start the application in your browser (localhost:3000).
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -16,10 +16,11 @@ const StudentVideoAndQuote = () => {
           id="LxE7a6S-si4"
           title="YouTube Embed"
           playlist={false}
+          alt="student video"
         />
       </Box>
       <Box style={{ maxWidth: "89px" }}>
-        <img style={{ maxWidth: "89px" }} src={quote} alt="quote" />
+        <img style={{ maxWidth: "89px" }} src={quote} alt="quote icon" />
         <BoxText
           fontWeight={"500"}
           fontStyle="italic"

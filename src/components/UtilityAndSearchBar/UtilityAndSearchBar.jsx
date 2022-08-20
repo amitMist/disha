@@ -21,10 +21,10 @@ const Menu = () => (
 const getSocialMediaLinks=()=>{
   return (
     <div className="utilitybar-links_socialMedia">
-          <img src={ facebookVector } alt="vector" />
-          <img src={ twitterVector } alt="vector" />
-          <img src={ instagramVector } alt="vector" />
-          <img src={ youtubeVector } alt="vector" />
+          <img src={ facebookVector } alt="facebook icon" />
+          <img src={ twitterVector } alt="twitter icon" />
+          <img src={ instagramVector } alt="instagram icon" />
+          <img src={ youtubeVector } alt="youtube icon" />
       </div>
   )
 }
@@ -183,6 +183,7 @@ const UtilityAndSearchBar = () => {
 
         <button
           type="search"
+          alt="search button"
           onClick={handleSearchIconClick}
           id="utilitybar-searchbar-icon"
           style={{
