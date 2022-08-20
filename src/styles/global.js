@@ -11,7 +11,7 @@ export const Global = createGlobalStyle`
   
 `;
 export const Container = styled.div`
-  display: flex;
+  display: ${props => props.display? props.display: "flex"};
   flex-wrap: wrap;
   margin: ${px2vw(32)};
   max-width: 100%;
@@ -90,7 +90,7 @@ export const BoxText = styled.p`
   letter-spacing: ${(props) => props.letterSpacing? props.letterSpacing: "normal" };
   text-align: ${(props) => (props.textAlign ? props.textAlign : "left")};
   width: ${props => props.width ? props.width : "inherit"};
-
+  visibility: ${props => props.visibility? props.visibility: "visible"};
 `;
 
 export const CollapseButton = styled.button`

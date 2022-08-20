@@ -97,9 +97,15 @@ const  VideoBGAndForm = () => {
                 />
                 <label>Certificate</label>
               </div>
+              <div
+                className="header-queryBox_next"
+                style={{ marginLeft: "10px" }}
+              >
+                <input type="submit" value="Next" />
+              </div>
             </Container>
-
-            <Container>
+           
+            <Container display={isDesktop? "flex": "none"} >
               <div
                 className="header-queryBox_field"
                 style={{ marginRight: "10px" }}
@@ -115,14 +121,14 @@ const  VideoBGAndForm = () => {
                 <input type="text" id="lname" name="lname" />
               </div>
             </Container>
-            <Container>
+            <Container display={isDesktop? "flex": "none"} >
               <div className="header-queryBox_field">
                 Email address
                 <input type="text" id="email" name="email" />
               </div>
             </Container>
 
-            <Container alignItems="end">
+            <Container alignItems="end" display={isDesktop? "flex": "none"} >
               <div
                 className="header-queryBox_field"
                 style={{ marginRight: "10px" }}
@@ -140,12 +146,13 @@ const  VideoBGAndForm = () => {
           </div>
         </form>
         <BoxText
+          visibility={isDesktop? "visible": "hidden"} 
           fontWeight="500"
           fontSize="9px"
           lineHeight="11px"
           textAlign="center"
           width="100%"
-          letterSpacing="-0.02em"
+          letterSpacing="-0.02em" 
         >
           We value your privacy and will never share this information without
           your consent.
