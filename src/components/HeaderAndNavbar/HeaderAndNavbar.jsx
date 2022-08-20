@@ -4,10 +4,10 @@ import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
 import umbcLogo from '../../assets/logo.png';
 import './HeaderAndNavbar.css';
 
-import facebookVector from '../../assets/facebookVector.png';
-import twitterVector from '../../assets/twitterVector.png';
-import instagramVector from '../../assets/instagramVector.png';
-import youtubeVector from '../../assets/youtubeVector.png';
+import facebookVector from '../../assets/facebookExpandVector.svg';
+import twitterVector from '../../assets/twitterExpandVector.svg';
+import instagramVector from '../../assets/instagramExpandVector.svg';
+import youtubeVector from '../../assets/youtubeExpandVector.svg';
 
 
 const Menu = () => (

@@ -1,9 +1,9 @@
 import React, {useEffect,useRef} from 'react';
 
-import facebookVector from '../../assets/facebookVector.png';
-import twitterVector from '../../assets/twitterVector.png';
-import instagramVector from '../../assets/instagramVector.png';
-import youtubeVector from '../../assets/youtubeVector.png';
+import facebookVector from '../../assets/facebookVector.svg';
+import twitterVector from '../../assets/twitterVector.svg';
+import instagramVector from '../../assets/instagramVector.svg';
+import youtubeVector from '../../assets/youtubeVector.svg';
 import searchVector from '../../assets/searchVector.svg';
 
 import './UtilityAndSearchBar.css';
@@ -32,23 +32,67 @@ const getSocialMediaLinks=()=>{
 const items = [
   {
     id: 0,
-    name: 'Cobol'
+    name: 'Academic Integrity'
   },
   {
     id: 1,
-    name: 'JavaScript'
+    name: 'Interdisciplinary CoLab'
   },
   {
     id: 2,
-    name: 'Basic'
+    name: 'Jobs and Internships - myUMBC'
   },
   {
     id: 3,
-    name: 'PHP'
+    name: 'Work at UMBC'
   },
   {
     id: 4,
-    name: 'Java'
+    name: 'How to Change Your Password'
+  },
+  {
+    id: 5,
+    name: 'Job Fair Calendar'
+  },
+  {
+    id: 6,
+    name: 'Modern Languages, Linguistics, and Intercultural Communication'
+  },
+  {
+    id: 7,
+    name: 'Retriever Fitness Center'
+  },
+  {
+    id: 8,
+    name: 'Computer Science and Electrical Engineering'
+  },
+  {
+    id: 9,
+    name: 'Retriever Athletic Center'
+  },
+  {
+    id: 10,
+    name: 'Financial Aid and Scholarships'
+  },
+  {
+    id: 11,
+    name: 'Graduation Information'
+  },
+  {
+    id: 12,
+    name: 'Undergraduate Catalog'
+  },
+  {
+    id: 13,
+    name: 'The Retriever Weekly'
+  },
+  {
+    id: 14,
+    name: 'Alumni Affairs'
+  },
+  {
+    id: 15,
+    name: 'Education'
   }
 ]
   const handleOnSearch = (string, results) => {
