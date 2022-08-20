@@ -4,6 +4,12 @@ import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
 import umbcLogo from '../../assets/logo.png';
 import './HeaderAndNavbar.css';
 
+import facebookVector from '../../assets/facebookVector.png';
+import twitterVector from '../../assets/twitterVector.png';
+import instagramVector from '../../assets/instagramVector.png';
+import youtubeVector from '../../assets/youtubeVector.png';
+
+
 const Menu = () => (
   <>
     <p><a href='#about'>about</a></p>
@@ -15,6 +21,17 @@ const Menu = () => (
     <p><a href='#supportUmbc'>support umbc</a></p>  
   </>
 )
+
+const getSocialMediaLinks=()=>{
+  return (
+    <div className="utilitybar-links_socialMedia">
+          <img src={ facebookVector } alt="vector" />
+          <img src={ twitterVector } alt="vector" />
+          <img src={ instagramVector } alt="vector" />
+          <img src={ youtubeVector } alt="vector" />
+      </div>
+  )
+}
 
 const HeaderAndNavbar = () => {
   
@@ -39,6 +56,9 @@ const HeaderAndNavbar = () => {
             <div className="navbar-menu_container scale-up-center">
               <div className="navbar-menu_container-links">
                 <Menu />
+                {
+                  getSocialMediaLinks()
+                }
               </div>
             </div>
           )}
