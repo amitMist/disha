@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./StudentVideoAndQuote.css";
+//import "./StudentVideoAndQuote.css";
 import quote from "../../assets/quote.svg";
 import { Box, BoxText, Container } from "../../styles/global";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
@@ -11,14 +11,14 @@ const StudentVideoAndQuote = () => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
   return (
     <Container>
-      <Box width="700">
+      <Box style={{ width: "900px" }}>
         <LiteYouTubeEmbed
           id="LxE7a6S-si4"
           title="YouTube Embed"
           playlist={false}
         />
       </Box>
-      <Box>
+      <Box style={{ maxWidth: "89px" }}>
         <img style={{ maxWidth: "89px" }} src={quote} alt="quote" />
         <BoxText
           fontWeight={"500"}

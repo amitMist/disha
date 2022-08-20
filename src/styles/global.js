@@ -13,7 +13,6 @@ export const Global = createGlobalStyle`
 export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin: ${px2vw(32)};
   max-width: 100%;
   height: ${props => props.height? props.height: "auto"};

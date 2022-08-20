@@ -7,6 +7,12 @@ import useMediaQuery from "../../utils/useMediaQuery";
 
 const  VideoBGAndForm = () => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
+  const handleApplyButtonClick = () => {
+    console.log('handleApplyButtonClick');
+  }
+  const handleFormSubmit = (event) => {
+    console.log('handleFormSubmit');
+  }
   
 
   const getApplyBox=()=>{
@@ -34,7 +40,7 @@ const  VideoBGAndForm = () => {
             materials.
         </BoxText>
           <div className="header-content_input">
-            <button type="button">Apply</button>
+            <button type="button" onClick={handleApplyButtonClick}>Apply</button>
           </div>
         </div>
     );
@@ -63,7 +69,7 @@ const  VideoBGAndForm = () => {
         >
           What degree level are you interested in pursuing?
         </BoxText>
-        <form action="#" style={{ width: "100%" }}>
+        <form action="#" style={{ width: "100%" }} onSubmit={handleFormSubmit}>
           <div className="header-queryBox_form">
             <Container style={{ flexDirection: "column" }}>
               <div className="header-queryBox_radiobutton">

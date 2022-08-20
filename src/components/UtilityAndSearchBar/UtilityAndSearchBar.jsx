@@ -74,8 +74,8 @@ const items = [
   const formatResult = (item) => {
     return (
       <>
-        <span style={{ display: 'block', textAlign: 'left' }}>id: {item.id}</span>
-        <span style={{ display: 'block', textAlign: 'left' }}>name: {item.name}</span>
+        {/* <span style={{ display: 'block', textAlign: 'left' }}>id: {item.id}</span> */}
+        <span style={{ display: 'block', textAlign: 'left' }}>{item.name}</span>
       </>
     )
   }
@@ -131,6 +131,7 @@ const UtilityAndSearchBar = () => {
                 color: "#FFFFFF",
                 border: "0px",
                 borderRadius: "4px 0px 0px 4px",
+                hoverBackgroundColor:"rgba(48, 48, 48, 0.5)"
               }}
             />
           </div>
